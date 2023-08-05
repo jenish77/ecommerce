@@ -1,0 +1,32 @@
+{% extends 'shop/basic.html' %}
+
+
+{% block title %} Contact Us {% endblock %}
+{% block body %}
+
+<div class="container">
+    <h2 class="contact my-3">Contact Us Regarding Any Query</h2>
+    <form action="/shop/Contact/" method="post">{% csrf_token %}
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Enter Your Name"><br>
+        </div>
+        <div class="form-group">
+            <label for="name">Email</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Enter Your Email"><br>
+        </div>
+        <div class="form-group">
+            <label for="name">Phone</label>
+            <input type="text" class="form-control" name="phone" id="phone" placeholder="Enter Your Phone"><br>
+        </div>
+        <div class="form-group">
+            <label for="name">How Can We Help you</label>
+            <textarea class="form-control" name="desc" id="text" placeholder="Enter Here"></textarea><br>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary cart">Submit</button>
+        </div>
+    </form>
+</div>
+
+{% endblock %}

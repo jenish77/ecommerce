@@ -1,0 +1,37 @@
+{% extends 'shop/basic.html' %}
+
+
+{% block title %} search {% endblock %}
+{% block body %}
+ {% load static %}
+
+
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src='/media/{{para.image}}'  class="card-img-top" alt="loading.">
+            <div class="card-body">
+              <h5 class="card-title">{{para.product_name}}</h5>
+              <p class="card-text">{{para.desc}}.</p>
+                <h6 class="card-title">RS.{{para.price}}</h6>
+              <a href="#" class="btn btn-primary">Add Cart</a>
+              <a href="#" class="btn btn-primary">Quick View</a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+{% block js %}
+
+
+
+{% endblock %}
+
+
+{% endblock %}
